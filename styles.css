@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.page {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.sensor-data-box {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    height: 300px;
+}

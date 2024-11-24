@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="page active">
+        <img src="amrita_logo.png" alt="Amrita Vishwa Vidya Logo" class="logo">
+        <h1>Welcome to Sensor Dashboard</h1>
+        <div class="login-form">
+            <input type="text" id="username" placeholder="Name">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-button">Log In</button>
+        </div>
+    </div>
+
+    <!-- Loading Page -->
+    <div id="loading-page" class="page">
+        <h1>Loading...</h1>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard-page" class="page">
+        <div class="header">
+            <img src="amrita_logo.png" alt="Amrita Vishwa Vidya Logo" class="logo">
+            <h1>Sensor Dashboard</h1>
+        </div>
+        <div class="sensor-data-box">
+            <p><strong>Voltage:</strong> <span id="voltage">Loading...</span> V</p>
+            <p><strong>Current:</strong> <span id="current">Loading...</span> A</p>
+            <p><strong>Temperature:</strong> <span id="temperature">Loading...</span> °C</p>
+        </div>
+        <canvas id="voltageChart"></canvas>
+        <canvas id="currentChart"></canvas>
+        <canvas id="temperatureChart"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
